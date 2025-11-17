@@ -52,7 +52,9 @@ jobs:
 
   # Uploads dependency graph to GitHub to receive Dependabot alerts 
   update_dependence_graph:
-
+  
+    needs: [maven_test]
+    
     runs-on: ubuntu-latest
 
     permissions:
